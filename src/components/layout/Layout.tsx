@@ -11,6 +11,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                     </a>
                 </div>
                 <nav>
+                    <a href="/schools" className="text-gray-700 hover:text-blue-600 font-medium mr-6">Schools</a>
                     <a href="/register" className="text-gray-700 hover:text-blue-600 font-medium mr-6">Register</a>
                     <a href="/login" className="text-gray-700 hover:text-blue-600 font-medium">Login</a>
                 </nav>

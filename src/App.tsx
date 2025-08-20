@@ -5,6 +5,7 @@ import Apply from "./pages/Apply";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Status from "./pages/Status";
+import Schools from "./pages/Schools";
 import NotFound from "./pages/NotFound";
 import PrivateRoute from "./components/auth/PrivateRoute";
 import { AuthProvider } from './context/auth-context';
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/schools" element={<Schools />} />
 
             {/* Protected Routes */}
             <Route element={<PrivateRoute />}>
