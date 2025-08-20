@@ -3,7 +3,7 @@ import logo from '../../assets/quick-enroll-logo.png';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     return (
-        <div className="mx-auto max-w-6xl px-4 py-8 bg-white shadow-lg rounded-lg">
+        <div className="mx-auto max-w-6xl py-8 bg-white shadow-lg rounded-lg">
             <header className="flex items-center justify-between py-4 border-b border-gray-200 mb-8">
                 <div className="flex items-center">
                     <a href="/">

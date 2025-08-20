@@ -1,6 +1,7 @@
 import React from "react";
 import DataTable from "../ui/DataTable";
 import type { DataTableColumn, SchoolRow } from "../ui/DataTable";
+import { useNavigate } from "react-router-dom";
 
 const columns: DataTableColumn[] = [
     { key: "name", label: "Name" },
@@ -10,11 +11,20 @@ const columns: DataTableColumn[] = [
 ];
 
 const SchoolsGrid: React.FC<{ data: SchoolRow[] }> = ({ data }) => {
+    const navigate = useNavigate();
+
     // Render actions for each row
     const renderActions = () => (
         <>
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded mr-2">View</button>
-            <button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded">Apply</button>
+            <button
+                onClick={() => {
+                  navigate("/apply");
+                }}
+                className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded"
+            >
+                Apply
+            </button>
         </>
     );
 
