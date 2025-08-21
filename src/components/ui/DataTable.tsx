@@ -27,7 +27,7 @@ const DataTable: React.FC<DataTableProps> = ({ data, columns }) => {
                 </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
-                {data.map((row, idx) => (
+                {data.map((row) => (
                     <tr key={row.id}>
                         {columns.map((col) => (
                             <td key={col.key} className="px-6 py-4 whitespace-nowrap">{row[col.key]}</td>

@@ -1,6 +1,6 @@
 import React from 'react';
 import SchoolsGrid from '../components/common/SchoolsGrid';
-import type { SchoolRow } from '../components/common/SchoolsGrid';
+import type { SchoolRow } from '../components/ui/DataTable';
 
 const mockSchools: SchoolRow[] = [
   {
